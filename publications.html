@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<title>Neural Dynamics and Neural Engineering Lab</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-windows.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+        height: 80%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+/* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+/* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url('./static/Images/publications.jpeg');
+        min-height: 100%;
+        z-index: -1;
+    }
+
+
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-large">
+    <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button w3-center" onclick="toggleFunction()">Neural Dynamics and Neural Engineering Lab</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+        <a href="./publications.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Publications</a>
+        <a href="./people.html" class="w3-bar-item w3-button" onclick="toggleFunction()">People</a>
+        <a href="./news.html" class="w3-bar-item w3-button">News</a>
+    </div>
+</div>
+
+
+
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+    <div class="w3-display-middle w3-hide-small w3-hide-medium" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity w3-light-gray">Neural Dynamics and Neural Engineering Lab</span>
+    </div>
+</div>
+
+
+<div class="w3-center w3-hide-small">
+    <div style="margin-top: -20px; z-index: 1;">
+        <div class="w3-bar w3-border w3-round">
+            <a href="./home.html" class="w3-bar-item w3-button w3-light-grey w3-hover-deep-orange">Home</a>
+            <a href="./publications.html" class="w3-bar-item w3-button w3-win-phone-crimson w3-hover-deep-orange">Publications</a>
+            <a href="./people.html" class="w3-bar-item w3-button w3-light-grey w3-hover-deep-orange">People</a>
+            <a href="./news.html" class="w3-bar-item w3-button w3-light-grey w3-hover-deep-orange">News</a>
+        </div>
+    </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64 w3-text-black" id="about">
+    <h3 class="w3-center" style="font-size: 50px;">Publications</h3>
+
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">The relationship between coherence and the phase-locking value.</h2>
+                <p class="description">Lepage KQ and Vijayan S (2017). The relationship between coherence and the phase-locking value. Journal of Theoretical Biology, In press.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">Cortical circuit based lossless neural integrator for perceptual decision-making.</h2>
+                <p class="description">Lee JH, Tsunada J, Vijayan S, and Cohen YE: Cortical circuit based lossless neural integrator for perceptual decision-making. bioRxiv, bioRxiv; doi:10.1101/158865 2017.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">Frontal beta-theta network during REM sleep.</h2>
+                <p class="description">Vijayan S, Lepage KQ, Kopell NJ, Cash SS (2017). Frontal beta-theta network during REM sleep. eLife, 6:e18894.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">Thalamic mechanisms underlying alpha-delta sleep with implications for fibromyalgia. </h2>
+                <p class="description">Vijayan S,  Klerman EB,  Adler GK, Kopell NJ (2015). Thalamic mechanisms underlying alpha-delta sleep with implications for fibromyalgia. Journal of Neurophysiology, 114, 1923-1930.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">A time series model of phase amplitude cross frequency coupling and comparison of spectral characteristics with neural data.</h2>
+                <p class="description">Lepage KQ and Vijayan S (2015). A time series model of phase amplitude cross frequency coupling and comparison of spectral characteristics with neural data. BioMed Research International, 1-8.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">Brain rhythms connect impaired inhibition to altered cognition in schizophrenia.</h2>
+                <p class="description">Pittman-Polletta BR, Kocsis B, Vijayan S, Whittington MA, Kopell NJ (2015). Brain rhythms connect impaired inhibition to altered cognition in schizophrenia, Biological Psychiatry, 77, 1020-1030.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">The roles of sleep-wake states and brain rhythms in epileptic seizure onset.</h2>
+                <p class="description">Ahmed OJ*, Vijayan S* (2014). The roles of sleep-wake states and brain rhythms in epileptic seizure onset. Journal of Neuroscience, 34, 7395-7.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">Biophysical modeling of alpha rhythms during halothane-induced unconsciousness.</h2>
+                <p class="description">Vijayan S, Ching S, Purdon PL, Brown EN, Kopell NJ (2013). Biophysical modeling of alpha rhythms during halothane-induced unconsciousness. Int. IEEE EMBS Conf. Neural Engineering, 1104-1107.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">Thalamocortical mechanisms for the anteriorization of alpha rhythms during propofol-induced unconsciousness.</h2>
+                <p class="description">Vijayan S*, Ching S*, Purdon PL, Brown EN, Kopell NJ (2013). Thalamocortical mechanisms for the anteriorization of alpha rhythms during propofol-induced unconsciousness. Journal of  Neuroscience, 33, 11070-5.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">Thalamic model of awake alpha oscillations and implications for stimulus processing.</h2>
+                <p class="description">Vijayan S and Kopell NJ (2012). Thalamic model of awake alpha oscillations and implications for stimulus processing. PNAS, 109, 18553-8.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">A neurophysiological-metabolic model for burst suppression.</h2>
+                <p class="description">Ching S, Purdon PL, Vijayan S, Kopell NJ, Brown EN (2012). A neurophysiological-metabolic model for burst suppression. PNAS, 109, 3095-100.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">Assessing neuronal interactions of cell assemblies during general anesthesia.</h2>
+                <p class="description">Chen Z, Vijayan S, Ching S, Hale G, Flores, FJ, Wilson MA, Brown EN (2011). Assessing neuronal interactions of cell assemblies during general anesthesia. Conf. Proc. IEEE Eng. Med. Biol. Soc., 4175-8.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">Activity in the barrel cortex during active behavior and sleep.</h2>
+                <p class="description">Vijayan S, Hale GJ, Moore CI, Brown EN, Wilson MA (2010). Activity in the barrel cortex during active behavior and sleep. Journal of Neurophysiology, 103, 2074-2084.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">Discrete and continuous-time probabilistic models and algorithms for inferring neuronal UP/DOWN states.</h2>
+                <p class="description">Chen Z, Vijayan S, Wilson MA, Barbieri R, Brown EN (2009). Discrete- and continuous-time probabilistic models and algorithms for inferring neuronal UP/DOWN states. Neural Computation, 21, 1797-1862.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">Vascular response to syntactic processing: event-related fMRI study of relative clauses.</h2>
+                <p class="description">Caplan D, Vijayan S, Kuperberg G, West C, Waters G, Greve D, Dale AM (2001). Vascular response to syntactic processing: event-related fMRI study of relative clauses. Human Brain Mapping, 15, 26-38.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="w3-container" style="margin:0 -30px">
+        <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+            <a href="#">
+                <h2 class="w3-xlarge w3-text-dark-grey">Rule learning by seven-month-old infants</h2>
+                <p class="description">Marcus GF, Vijayan S, Bandi Rao S, Vishton PM (1999). Rule learning by seven-month-old infants. Science, 283, 77-80.</p>
+            </a>
+        </div>
+    </div>
+
+    <br/>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-light-gray w3-padding-64 w3-display-container w3-hide-small">
+    <div class="w3-display-topleft">
+        <img src="./static/Images/virginia_tech.png" alt="Virginia Tech logo" style="width: 50%;">
+        <p style="text-align: left; margin-left: 30%;">
+            ICTAS II, <br>
+            240 W Campus Dr, Blacksburg,<br>
+            VA 24060, USA
+        </p>
+    </div>
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+        <i class="fa fa-github w3-hover-opacity w3-xxlarge"></i>
+    </div>
+    <div class="w3-display-bottommiddle">
+        © 2017 Virginia Polytechnic Institute and State University
+    </div>
+    <br>
+</footer>
+
+<footer class="w3-center w3-light-gray w3-padding-64 w3-display-container w3-hide-large w3-hide-medium">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+        <i class="fa fa-github w3-hover-opacity w3-xxlarge"></i>
+    </div>
+    <div class="w3-row">
+        <div class="w3-col m4">
+            <img src="./static/Images/virginia_tech.png" alt="Virginia Tech logo" style="width: 30%;">
+        </div>
+        <div class="w3-col m8">
+            <p>
+                ICTAS II, <br>
+                240 W Campus Dr, Blacksburg,<br>
+                VA 24060, USA
+            </p>
+        </div>
+    </div>
+    <div class="w3-display-bottommiddle">
+        © 2017 Virginia Polytechnic Institute and State University
+    </div>
+    <br>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+    function myMap()
+    {
+        myCenter=new google.maps.LatLng(37.222245, -80.425271);
+        var mapOptions= {
+            center:myCenter,
+            zoom:12, scrollwheel: false, draggable: false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
+        marker.setMap(map);
+    }
+
+// Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+// Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        }
+    }
+
+// Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    // Smooth Scroll
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn1pLAy_NVOtov6GUzJ46rE1oxPnG-Cpo&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
