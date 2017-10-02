@@ -35,6 +35,19 @@
         z-index: -1;
     }
 
+    /* First image (Logo. Full height) */
+    .bgimg-2 {
+        background-image: url('./static/Images/people.jpg');
+        min-height: 100%;
+        z-index: -1;
+    }
+
+    .bgimg-3 {
+        background-image: url('./static/Images/sci_3.webp');
+        min-height: 100%;
+        z-index: -1;
+    }
+
 
     .w3-wide {letter-spacing: 10px;}
     .w3-hover-opacity {cursor: pointer;}
@@ -73,15 +86,22 @@
 
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container" id="home">
+<div class="bgimg-1 w3-display-container w3-animate-opacity" id="home">
     <div class="w3-display-middle w3-hide-small w3-hide-medium" style="white-space:nowrap;">
         <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity w3-light-gray">Neural Dynamics and Neural Engineering Lab</span>
     </div>
 </div>
 
+<div class="w3-center w3-hide-small">
+    <div style="margin-top: -640px;z-index: 1;">
+        <div class="w3-btn" onclick="plusDivs(-1)" style="float: left; height: 635px;"><span style="position: relative; top: 48%; left: 30%;"> &#10094;</span></div>
+        <div class="w3-btn" onclick="plusDivs(1)" style="float: right; height: 635px;"><span style="position: relative; top: 48%; left: 30%;">&#10095;</span></div>
+    </div>
+</div>
+
 
 <div class="w3-center w3-hide-small">
-    <div style="margin-top: -20px; z-index: 1;">
+    <div style="margin-top: 620px; z-index: 1;">
         <div class="w3-bar w3-border w3-round w3-card-4">
             <a href="index.html" class="w3-bar-item w3-button w3-light-grey w3-hover-deep-orange">Home</a>
             <a href="./publications.html" class="w3-bar-item w3-button w3-win-phone-crimson w3-hover-deep-orange">Publications</a>
@@ -90,6 +110,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64 w3-text-black" id="about">
@@ -384,6 +405,29 @@
             } // End if
         });
     });
+
+    var slideIndex = 0;
+    var bg_images = ['bgimg-1', 'bgimg-2', 'bgimg-3'];
+    function plusDivs(n) {
+        slideIndex = slideIndex + n;
+        var x = document.getElementById("home");
+        if (slideIndex >= bg_images.length) {
+            x.classList.remove(bg_images[slideIndex-1]);
+            slideIndex = 0;
+            x.classList.add(bg_images[slideIndex]);
+            return
+        }
+        if (slideIndex < 0) {slideIndex = bg_images.length-1}
+        x.classList.add(bg_images[slideIndex]);
+        x.classList.remove(bg_images[slideIndex-n]);
+    }
+
+
+    window.setInterval(function(){
+        plusDivs(1)
+    }, 5000);
+
+
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn1pLAy_NVOtov6GUzJ46rE1oxPnG-Cpo&callback=myMap"></script>
 <!--
