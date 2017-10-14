@@ -1,2 +1,2 @@
-# Neural_dynamics_lab_website
-Neural Dynamics and Neural Engineering Lab
+# Neural Dynamics and Neural Engineering Lab
+Verion 0.9
