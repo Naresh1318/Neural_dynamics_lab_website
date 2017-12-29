@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-windows.css">
+<link rel="icon" type="image/x-icon" href="static/Images/icon.jpg" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
@@ -44,6 +45,12 @@
 
     .bgimg-3 {
         background-image: url('./static/Images/sci_3.webp');
+        min-height: 100%;
+        z-index: -1;
+    }
+
+    .bgimg-4 {
+        background-image: url('./static/Images/human_brain_circuit_redmask.jpg');
         min-height: 100%;
         z-index: -1;
     }
@@ -155,14 +162,14 @@
         <div class="w3-col m8 w3-panel">
             <div class="w3-large w3-margin-bottom">
                 <i class="fa fa-map-marker fa-fw w3-text-red w3-xlarge w3-margin-right"></i>ICTAS II, 240 W Campus Dr, Blacksburg, US<br>
-                <i class="fa fa-phone fa-fw w3-text-blue w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+                <i class="fa fa-phone fa-fw w3-text-blue w3-xlarge w3-margin-right"></i> Phone: +1 540-232-8428<br>
                 <!--
                 <i class="fa fa-envelope fa-fw w3-text-green w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
                 -->
             </div>
             <p>Interested in chatting about our work?</p>
             <p>Leave a note for a quick response</p>
-            <form action="http://formspree.io/rnaresh.n@gmail.com" target="_blank" method="post">
+            <form action="http://formspree.io/neuron99@vt.edu" target="_blank" method="post">
                 <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                     <div class="w3-half">
                         <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -304,7 +311,7 @@
 
     // Changing background
     var slideIndex = 0;
-    var bg_images = ['bgimg-1', 'bgimg-2', 'bgimg-3'];
+    var bg_images = ['bgimg-1', 'bgimg-2', 'bgimg-3', 'bgimg-4'];
     function plusDivs(n) {
         slideIndex = slideIndex + n;
         var x = document.getElementById("home");
