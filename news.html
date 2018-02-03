@@ -27,7 +27,7 @@
 
 /* First image (Logo. Full height) */
     .bgimg-1 {
-        background-image: url('./static/Images/news.webp');
+        background-image: url('./static/Images/news.png');
         min-height: 100%;
         z-index: -1;
     }
@@ -39,20 +39,13 @@
         z-index: -1;
     }
 
-    .bgimg-3 {
-        background-image: url('./static/Images/sci_3.webp');
-        min-height: 100%;
-        z-index: -1;
-    }
-
-
 
     .w3-wide {letter-spacing: 10px;}
     .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1024px) {
-        .bgimg-1, .bgimg-2, .bgimg-3 {
+        .bgimg-1, .bgimg-2 {
             background-attachment: scroll;
         }
     }
@@ -139,11 +132,13 @@
             a graduate student at Virginia Tech and are interested in joining the lab, please contact Dr. Vijayan
             (neuron99 AT vt.edu) to discuss potential projects and to set up a lab rotation.
             <br>Prospective graduate students should apply to one of the following graduate programs: <br>
-            <a href="https://www.sbes.vt.edu">Biomedical Engineering</a><br>
+            <a href="https://www.sbes.vt.edu" style="color: rgb(173, 38, 56)">Biomedical Engineering</a><br>
 
-            <a href="https://www.tbmh.vt.edu">Translational Biology, Medicine, and Health (TBMH)</a><br>
+            <a href="https://www.tbmh.vt.edu" style="color: rgb(173, 38, 56)">Translational Biology, Medicine, and Health (TBMH)</a><br>
 
-            <a href="https://neuroscience.vt.edu">School of Neuroscience</a>
+            <a href="https://neuroscience.vt.edu" style="color: rgb(173, 38, 56)">School of Neuroscience</a><br>
+
+            <a href="http://gbcb.vbi.vt.edu" style="color: rgb(173, 38, 56)">Genetics, Bioinformatics & Computational Biology (GBCB)</a>
         </p>
 
         <h4 class="w3-leftbar" style="border-color: tomato!important;">&nbsp;&nbsp;Research Assistant Position</h4>
@@ -177,7 +172,7 @@ i
     <div class="w3-panel w3-card-4 w3-leftbar w3-round-medium" style="border-color: rgb(173, 38, 56)!important;">
         <p class="w3-xlarge w3-serif">
             <i>"Look for our chapter “Inferring neuronal network mechanisms underlying anesthesia-induced oscillations
-                using mathematical models” in the book In Dynamic Neuroscience, coming out this month!"</i>
+                using mathematical models” in the book In Dynamic Neuroscience, coming out next month!"</i>
         </p>
         <span style="float: right;">December 2017</span>
         <p>Sujith Vijayan</p>
@@ -404,7 +399,7 @@ i
     }
 
     var slideIndex = 0;
-    var bg_images = ['bgimg-1', 'bgimg-2', 'bgimg-3'];
+    var bg_images = ['bgimg-1', 'bgimg-2'];
     function plusDivs(n) {
         slideIndex = slideIndex + n;
         var x = document.getElementById("home");

@@ -44,13 +44,8 @@
         z-index: -1;
     }
 
-    .bgimg-3 {
-        background-image: url('./static/Images/sci_3.webp');
-        min-height: 100%;
-        z-index: -1;
-    }
 
-    .bgimg-4 {
+    .bgimg-3 {
         background-image: url('./static/Images/human_brain_circuit_redmask.jpg');
         min-height: 100%;
         z-index: -1;
@@ -74,7 +69,7 @@
 
 /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1024px) {
-        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
             background-attachment: scroll;
         }
     }
@@ -312,7 +307,7 @@
 
     // Changing background
     var slideIndex = 0;
-    var bg_images = ['bgimg-1', 'bgimg-2', 'bgimg-3', 'bgimg-4'];
+    var bg_images = ['bgimg-1', 'bgimg-2', 'bgimg-3'];
     function plusDivs(n) {
         slideIndex = slideIndex + n;
         var x = document.getElementById("home");
