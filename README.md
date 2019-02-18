@@ -1,5 +1,5 @@
 # Neural Dynamics and Neural Engineering Lab
-Verion 1.0
+Verion 1.1
 
 Fixes:
 * People page layout on mobile
